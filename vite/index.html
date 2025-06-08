@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/carrucel.css"/>
+  <script src="./src/carrucel.js"></script>
+  <title>Carousel</title>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+
+    </div>
+
+    <div class="section">
+      <div class="pages">
+        <span id="page1" class="page active" data-index="0"></span>
+        <span id="page2" class="page" data-index="1"></span>
+        <span id="page3" class="page" data-index="2"></span>
+        <span id="page4" class="page" data-index="3"></span>
+      </div>
+
+      <div class="author">
+        <h3 class="card__name">Terry Ivans</h3>
+        <p class="card__position">Project manager</p>
+      </div>
+    </div>
+
+    <div class="separador"></div>
+
+    <div class="interact-pages">
+      <button class="prev" aria-label="Previous testimonial" onclick="paginar(0)">&lt;</button>
+      <button class="next" aria-label="Next testimonial" onclick="paginar(1)">&gt;</button>
+    </div>
+  </div>
+</body>
+</html>
