@@ -1,4 +1,5 @@
 let currentIndex = 0;
+
 document.addEventListener('DOMContentLoaded', () => {
 
   cargarVistaActiva();
