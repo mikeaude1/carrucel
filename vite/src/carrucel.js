@@ -1,9 +1,8 @@
 let currentIndex = 0;
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Cargar la vista activa cuando la página termina de cargar
+
   cargarVistaActiva();
 
-  // 2. Configurar clics en los puntos
   const pages = document.querySelectorAll('.page');
   pages.forEach((dot) => {
     dot.addEventListener('click', () => {
@@ -19,7 +18,7 @@ function cargarVistaActiva() {
   if (!activePage) return;
 
   const headerDiv = document.querySelector('.header');
-  const pageId = activePage.id; // "page1", "page2", etc.
+  const pageId = activePage.id;
   const url = `/${pageId}.html`;
 
   fetch(url)
